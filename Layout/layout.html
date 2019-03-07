@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	{{header}}
+	<script async src="/js/site.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/site.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/icons/all.min.css">
+	<body>
+		<nav class="no-pc content content_m">
+			<div class="nav-mobile">
+				<div class="nav-mobile-img">
+					<a href="/">
+						<img src="/img/logo/logob.png" alt="{{site_nome}}" />
+					</a>
+				</div>
+				<div class="nav-mobile-menu">
+					<button class="b b-menu" onclick="triggerMenuMobile()">
+						<i id="nav-btn-menu" class="icl ic-bars"></i>
+					</button>
+				</div>
+			</div>
+			<div class="nav-container-menu">
+				<div class="content content_m">
+					<div class="nav-container-menu-over">
+						<div class="nav-container-menu-meio">
+								
+							<a href="/">
+								<div class="nav-container-menu-menu">
+									Início
+								</div>
+							</a>
+							<a href="/institucional">
+								<div class="nav-container-menu-menu">
+									MVC PHP 7.2
+								</div>
+							</a>
+							<a href="/servico">
+								<div class="nav-container-menu-menu">
+									Serviços
+								</div>
+							</a>
+							<a href="/dicas">
+								<div class="nav-container-menu-menu">
+									Dicas
+								</div>
+							</a>
+							<a href="/fotos">
+								<div class="nav-container-menu-menu">
+									Fotos
+								</div>
+							</a>
+							<a href="/contato">
+								<div class="nav-container-menu-menu">
+									Contato
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div id="push-loader"></div>
+		<main id="content" style="padding-top: 50px;">
+			{{visao}}
+		</main>
+		<footer class="content content_v content_h content_m">
+			<div class="container width-33-3">
+				<h3>Menu</h3>
+				<a href="/"><p>Início</p></a>
+				<a href="/servico"><p>Serviços</p></a>
+				<a href="/dicas"><p>Dicas</p></a>
+				<a href="/fotos"><p>Fotos</p></a>
+				<a href="/institucional"><p>MVC PHP 7.2</p></a>
+				<a href="/contato"><p>Contato</p></a>
+			</div>
+			<div class="container width-33-3">
+				<h3>MVC PHP 7.2</h3>
+				<p>Santo Marchetto, 227, Ap 101</p>
+				<p>Centro Marau - RS</p>
+				<p>CEP 99150-000</p>
+				<p>(54) 9-2000-1810</p>
+				<p>email@paracontato.com</p>
+			</div>
+			<div class="container width-33-3">
+				<h3>Instagram</h3>
+				<div class="instagram">				
+					<p>Aqui vai as publicações do instagram</p>
+				</div>
+			</div>
+		</footer>
+		<div class="developement">Desenvolvido por Matheus Maydana</div>
+	</body>
+</body>
+</html>
