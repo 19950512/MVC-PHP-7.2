@@ -8,6 +8,7 @@
 		"VERSION":"0.0.2"
 	}
 */
+
 class Index {
 
 	private $_nucleo;
@@ -28,6 +29,12 @@ class Index {
 		if(isset($_POST['push']) and $_POST['push'] == 'push'){
 			$this->_push = true;
 		}
+
+		/* UTILIZAÇÃO DO COMPOSER */
+		$gravatar = new Composer('gravatarlib_Gravatar');
+		$gravatar->_i()->setAvatarSize(150);
+		new de('<img src="' . $gravatar->_i()->buildGravatarURL('moises@objetivawebsites.com.br') . '" width="150" height="150">');
+
 	}
 
 	function index(){
